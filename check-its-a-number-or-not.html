@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var i=document.getElementById('sub1').value;
+            if(isNaN(i)){
+                alert("Its not a number");
+            }
+            else{
+                alert("its a number");
+            }
+        }
+    </script>
+</head>
+<body>
+    value <input type="text" id="sub1" >
+    <input type="button" value="check" onclick=check()>
+</body>
+</html>

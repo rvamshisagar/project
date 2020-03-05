@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function myfunc(){
+            alert("vamshi is here!!")
+        }
+    </script>
+    <script>
+        function add(){
+            var i=parseInt(document.getElementById("sub1").value);
+            var j=parseInt(document.getElementById("sub2").value);
+            alert("total="+(i+j));
+        if(i+j>50){
+            alert("passed!!");
+        }
+        else{
+            alert("failed!!");
+        }
+    }
+        function sum(){
+            var i=parseInt(document.getElementById("sub3").value);
+            var j=parseInt(document.getElementById("sub4").value);
+            document.getElementById("sum").value=i+j;
+        }
+    </script>
+</head>
+<body>
+    value1
+    <input type="text" id="sub1">
+</br>
+value2
+<input type="text" id="sub2">
+</br>
+<input type="button" value="addition" onclick="add()">
+</br>
+valuea
+    <input type="text" id="sub3">
+</br>
+valueb
+<input type="text" id="sub4">
+</br>
+sum <input type="text" id="sum">
+<input type="button" value="sum" onclick="sum()">
+    <input type="button" value="function" onclick=myfunc()>
+    <input type="button" value="click" onclick="alert('hello')">
+    <input type="button" value="addition" onclick="add()">
+    <input type="button" value="two function" onclick="myfunc(),add()">
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        var c=document.getElementById("c");
+        c.value=a+b;
+        var option=parseInt(document.getElementById("option").value);
+        switch(option){
+            case 1:
+                c.value=a+b;
+                break;
+            case 2:
+                c.value=a-b;
+                break;
+            case 3:
+                c.value=a*b;
+                break;
+            case 4:
+                c.value=a/b;
+                break;
+            case 5:
+                c.value=a%b;
+                break;
+            default:
+                alert("Enter a proper number!!!");
+        }
+
+    }
+    </script>
+    
+</head>
+<body>
+    Enter value of a:<input type="text" id="a">
+</br>
+    Enter value of b:<input type="text" id="b">
+</br>
+Enter 1 for addition 2 for subtraction 3 for multiplication 4 for division 5 for reminder
+<input type="text" id ="option">
+</br>
+<input type="button" onclick="add()" value="Execute">
+</br>
+Result of a and b:<input type="text" id="c">
+</br>
+    
+    
+    
+</body>
+</html>

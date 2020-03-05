@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 id="ch"> This must change </h1>
+    <script>
+        var elem= document.getElementById("ch");
+        var a=['1','2','3','4','5'];
+        for(var j in a){
+            elem.innerHTML +=a[j];
+        }
+        for (let index = 0; index < a.length; index++) {
+            const element = a[index];
+            document.write(element+" ");
+            }
+    </script>
+    <h1 id="ch"> This must change </h1>
+    <table border = 2 width="100%">
+    <script>
+        //ananomis function
+        (function(){
+            alert("hello");
+        })();
+        //dynamic array
+        var elem= document.getElementById("ch");
+        var a=[['1','2','3','4','5'],['a','b','c','d','e']];
+        for(var j in a){
+            document.write("write");
+            document.write("<tr>");
+            document.write("<td>"+a[j][0]+"</td>");
+            document.write("<td>"+a[j][1]+"</td>");
+            document.write("<td>"+a[j][2]+"</td>");   
+            document.write("<td>"+a[j][3]+"</td>");
+            document.write("<td>"+a[j][4]+"</td>"); 
+            document.write("</tr>");
+        }
+    </script>
+    </table>
+</head>
+<body>
+    
+</body>
+</html>
